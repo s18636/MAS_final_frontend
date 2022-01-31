@@ -1,0 +1,16 @@
+button{
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  font-size: large;
+}
+
+button:hover{
+  background-color: #5E503F;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+  width: 100%;
+}

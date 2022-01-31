@@ -12,4 +12,7 @@ export class CurierHomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  startRegisterDelivery() {
+    //show question prompt
+  }
 }
