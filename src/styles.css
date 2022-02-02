@@ -9,3 +9,12 @@
   background-color: #5E503F;
   color: white;
 }
+
+ul{
+  list-style-type: none;
+}
+
+.divider-line{
+  width: 100%;
+  border-bottom: 1px solid black;
+}

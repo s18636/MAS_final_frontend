@@ -8,11 +8,14 @@ import {RouterModule, Routes} from "@angular/router";
 import { QuestionModalComponent } from './components/question-modal/question-modal.component';
 import { DeliveriesListComponent } from './components/deliveries-list/deliveries-list.component';
 import { DeliveryDetailsComponent } from './components/delivery-details/delivery-details.component';
+import { VehiclesListComponent } from './components/vehicles-list/vehicles-list.component';
 
 
 const routes: Routes = [
   {path: 'curier-home', component: CurierHomeComponent},
   {path: 'deliveries-list', component: DeliveriesListComponent},
+  {path: 'delivery-details', component: DeliveryDetailsComponent},
+  {path: 'vehicles-list', component: VehiclesListComponent},
   {path: '**', redirectTo: 'curier-home', pathMatch: 'full'},
 ];
 
@@ -23,7 +26,8 @@ const routes: Routes = [
     HeaderComponent,
     QuestionModalComponent,
     DeliveriesListComponent,
-    DeliveryDetailsComponent
+    DeliveryDetailsComponent,
+    VehiclesListComponent
   ],
   imports: [
     BrowserModule,
