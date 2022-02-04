@@ -9,6 +9,8 @@ import { QuestionModalComponent } from './components/question-modal/question-mod
 import { DeliveriesListComponent } from './components/deliveries-list/deliveries-list.component';
 import { DeliveryDetailsComponent } from './components/delivery-details/delivery-details.component';
 import { VehiclesListComponent } from './components/vehicles-list/vehicles-list.component';
+import { DeliverySummaryComponent } from './components/delivery-summary/delivery-summary.component';
+import { FailSuccessModalComponent } from './components/fail-success-modal/fail-success-modal.component';
 
 
 const routes: Routes = [
@@ -16,6 +18,7 @@ const routes: Routes = [
   {path: 'deliveries-list', component: DeliveriesListComponent},
   {path: 'delivery-details', component: DeliveryDetailsComponent},
   {path: 'vehicles-list', component: VehiclesListComponent},
+  {path: 'delivery-summary', component: DeliverySummaryComponent},
   {path: '**', redirectTo: 'curier-home', pathMatch: 'full'},
 ];
 
@@ -27,7 +30,9 @@ const routes: Routes = [
     QuestionModalComponent,
     DeliveriesListComponent,
     DeliveryDetailsComponent,
-    VehiclesListComponent
+    VehiclesListComponent,
+    DeliverySummaryComponent,
+    FailSuccessModalComponent
   ],
   imports: [
     BrowserModule,
